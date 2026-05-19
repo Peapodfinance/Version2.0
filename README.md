@@ -12,6 +12,13 @@ npx serve .
 
 Then open the URL shown (typically `http://localhost:3000`).
 
+## GitHub Pages
+
+Deployed under a project subdirectory (e.g. `https://peapodfinance.github.io/Version2.0/`):
+
+- `BASE_PATH` in `js/constants.js` resolves asset URLs to `/Version2.0/data/...`
+- A `<base href>` tag in `index.html` fixes CSS/JS module paths when the URL has no trailing slash
+
 ## Architecture
 
 ```
