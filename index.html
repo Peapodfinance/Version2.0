@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Educational MCA lender qualification estimator — estimated match scores based on lender guidelines." />
   <title>Peapod Calculator Tool — Qualification Estimator</title>
-  <!-- Ensures ./css and ./js resolve correctly on GitHub Pages subdirectory deploys -->
+  <!-- Subdirectory-safe base URL for CSS, JS modules, and fetch() -->
   <script>
     (function () {
-      var base = window.location.pathname.indexOf('/Version2.0') !== -1 ? '/Version2.0/' : '/';
+      var path = window.location.pathname.replace(/\/index\.html$/i, '');
+      if (path !== '/' && path.charAt(path.length - 1) !== '/') path += '/';
       var el = document.createElement('base');
-      el.href = base;
-      document.head.appendChild(el);
+      el.href = path || '/';
+      document.head.insertBefore(el, document.head.firstChild);
     })();
   </script>
   <link rel="stylesheet" href="css/styles.css" />
@@ -112,10 +113,27 @@
     </section>
   </main>
 
-  <div id="loadingOverlay" class="loading-overlay" hidden aria-hidden="true">
+  <div id="loadingOverlay" class="loading-overlay" hidden aria-hidden="true" style="display: none; pointer-events: none;">
     <div class="loading-spinner" role="status" aria-label="Loading"></div>
   </div>
 
+  <script>
+    (function () {
+      function dismissOverlay() {
+        var o = document.getElementById('loadingOverlay');
+        if (o) {
+          o.hidden = true;
+          o.setAttribute('aria-hidden', 'true');
+          o.style.display = 'none';
+          o.style.pointerEvents = 'none';
+        }
+      }
+      window.addEventListener('error', dismissOverlay);
+      window.addEventListener('unhandledrejection', dismissOverlay);
+      window.addEventListener('peapod:ready', dismissOverlay);
+      setTimeout(dismissOverlay, 12000);
+    })();
+  </script>
   <script type="module" src="js/app.js"></script>
 </body>
 </html>

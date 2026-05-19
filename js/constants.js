@@ -3,12 +3,43 @@
  * Centralizes thresholds, labels, and configuration to avoid magic strings.
  */
 
+/**
+ * Detect GitHub Pages project subdirectory (e.g. /Version2.0).
+ * Works for any repo folder name on *.github.io hosts.
+ */
+export const BASE_PATH = (() => {
+  if (typeof window === 'undefined') return '';
+  const { hostname, pathname } = window.location;
+  if (!hostname.endsWith('github.io')) return '';
+
+  const segments = pathname.replace(/\/index\.html$/i, '').split('/').filter(Boolean);
+  return segments.length > 0 ? `/${segments[0]}` : '';
+})();
+
+/**
+ * Resolve asset URLs for fetch() — respects <base href> and subdirectory deploys.
+ * @param {string} relativePath - e.g. 'data/lenders.json'
+ */
+export function resolveAssetPath(relativePath) {
+  if (typeof document === 'undefined') {
+    const clean = String(relativePath).replace(/^\.\//, '');
+    return `${BASE_PATH}/${clean}`.replace(/\/{2,}/g, '/');
+  }
+
+  const clean = String(relativePath).replace(/^\.\//, '');
+  return new URL(clean, document.baseURI).href;
+}
+
 export const APP_CONFIG = {
   name: 'Peapod Calculator Tool',
   tagline: 'Educational qualification estimation for business funding options',
   partner: 'Partnered with Blue Bear Group LLC',
-  lendersDataPath: './data/lenders.json',
-  disclaimerPath: './components/disclaimer.html',
+  get lendersDataPath() {
+    return resolveAssetPath('data/lenders.json');
+  },
+  get disclaimerPath() {
+    return resolveAssetPath('components/disclaimer.html');
+  },
   analyzeDelayMs: 400,
   maxRecommendations: 3,
   industryRestrictedScoreCap: 35,

@@ -565,7 +565,7 @@ form.loading {
   opacity: 0.85;
 }
 
-/* Loading overlay */
+/* Loading overlay — [hidden] must beat display:flex or overlay blocks all clicks */
 .loading-overlay {
   position: fixed;
   inset: 0;
@@ -575,6 +575,12 @@ form.loading {
   align-items: center;
   justify-content: center;
   z-index: 999;
+}
+
+.loading-overlay[hidden] {
+  display: none !important;
+  pointer-events: none !important;
+  visibility: hidden;
 }
 
 .loading-spinner {
