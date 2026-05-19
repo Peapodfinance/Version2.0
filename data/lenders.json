@@ -1,0 +1,1349 @@
+[
+  {
+    "id": "one-team",
+    "name": "One Team",
+    "criteria": {
+      "personalCredit": 650,
+      "monthlyRevenue": 25000,
+      "deposits": 2,
+      "nsfs": 2,
+      "avgBalance": 1000,
+      "monthsBusiness": 12
+    },
+    "restrictedIndustries": [
+      "Law Firms",
+      "Pawn Shops",
+      "Finance/Investment/Banks",
+      "Non-Profit",
+      "Real Estate",
+      "Money Services Businesses",
+      "Marijuana/CBD",
+      "Trucking",
+      "Transportation",
+      "Bail-Bonds",
+      "Auto Sales"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "medium",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "rtmi-capital",
+    "name": "RTMI Capital",
+    "criteria": {
+      "personalCredit": 640,
+      "monthlyRevenue": 50000,
+      "deposits": 2,
+      "nsfs": 2,
+      "avgBalance": 3000,
+      "monthsBusiness": 24
+    },
+    "restrictedIndustries": [
+      "Law Firms",
+      "Pawn Shops",
+      "Finance/Investment/Banks",
+      "Non-Profit",
+      "Money Services Businesses",
+      "Marijuana/CBD",
+      "Trucking",
+      "Transportation",
+      "Bail-Bonds",
+      "Auto Sales"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "medium",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "peac-solutions",
+    "name": "PEAC Solutions",
+    "criteria": {
+      "personalCredit": 675,
+      "monthlyRevenue": 42000,
+      "deposits": 5,
+      "nsfs": 3,
+      "avgBalance": 4200,
+      "monthsBusiness": 36
+    },
+    "restrictedIndustries": [
+      "Auto Sales",
+      "Cleaning and Maintenance",
+      "Construction",
+      "Farming",
+      "Finance/Investment/Banks",
+      "Hotels & Lodging Memberships",
+      "Law Firms",
+      "Mining & Quarries",
+      "Non-Profit",
+      "Trucking",
+      "Transportation",
+      "Casino/ Gambling",
+      "Adult Entertainment"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "medium",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "idea-financial",
+    "name": "IDEA Financial",
+    "criteria": {
+      "personalCredit": 625,
+      "monthlyRevenue": 15000,
+      "deposits": 6,
+      "nsfs": 3,
+      "avgBalance": 4000,
+      "monthsBusiness": 24
+    },
+    "restrictedIndustries": [
+      "Farming",
+      "Contractors",
+      "Auto Sales",
+      "Auto Rentals",
+      "Oil & Gas",
+      "Finance/Investment/Banks",
+      "Bail-Bonds",
+      "Finance",
+      "Property Management",
+      "Real Estate",
+      "Education",
+      "Marijuana/CBD",
+      "Multi-Level Marketing Sales",
+      "Brokers",
+      "Mining & Quarries",
+      "Government Services",
+      "Gold Dealers",
+      "Gun Sales",
+      "Trucking",
+      "Transportation",
+      "Truck Leasing"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "medium",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "kapitus",
+    "name": "Kapitus",
+    "criteria": {
+      "personalCredit": 625,
+      "monthlyRevenue": 10000,
+      "deposits": 5,
+      "nsfs": 3,
+      "avgBalance": 600,
+      "monthsBusiness": 12
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Auto Sales",
+      "Marijuana/CBD",
+      "Cell Phone Stores",
+      "Colleges/Universities",
+      "Credit Repair",
+      "Finance/Investment/Banks",
+      "Government Services",
+      "Insurance",
+      "Boat Sales",
+      "Non-Profit",
+      "Auto Rentals",
+      "Casino/ Gambling"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "medium",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "fox-business-funding",
+    "name": "Fox Business Funding",
+    "criteria": {
+      "personalCredit": 550,
+      "monthlyRevenue": 50000,
+      "deposits": 5,
+      "nsfs": 3,
+      "avgBalance": 2000,
+      "monthsBusiness": 12
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Auto Sales",
+      "Marijuana/CBD",
+      "Colleges/Universities",
+      "Credit Repair",
+      "Finance/Investment/Banks",
+      "Boat Sales",
+      "Non-Profit",
+      "Auto Rentals",
+      "Casino/ Gambling"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "ondeck",
+    "name": "OnDeck",
+    "criteria": {
+      "personalCredit": 625,
+      "monthlyRevenue": 15000,
+      "deposits": 5,
+      "nsfs": 3,
+      "avgBalance": 1000,
+      "monthsBusiness": 24
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Art Dealer",
+      "Auto Sales",
+      "Bail-Bonds",
+      "Birth Tourism",
+      "Boat Sales",
+      "Brokers",
+      "Marijuana/CBD",
+      "Casino/ Gambling",
+      "Cell Phone Stores",
+      "Gold Dealers",
+      "Gun Sales",
+      "Horoscope/ Fortune Telling",
+      "Money Services Businesses",
+      "Multi-Level Marketing Sales",
+      "Non-Profit",
+      "Outdoor Power Equipment Stores",
+      "Pawn Shops",
+      "Private Households",
+      "Religious/Civic Organizations",
+      "RV Dealer"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "medium",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "headway-capital",
+    "name": "Headway Capital",
+    "criteria": {
+      "personalCredit": 600,
+      "monthlyRevenue": 5000,
+      "deposits": 1,
+      "nsfs": 3,
+      "avgBalance": 500,
+      "monthsBusiness": 6
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Art Dealer",
+      "Auto Sales",
+      "Bail-Bonds",
+      "Birth Tourism",
+      "Boat Sales",
+      "Brokers",
+      "Marijuana/CBD",
+      "Casino/ Gambling",
+      "Cell Phone Stores",
+      "Gold Dealers",
+      "Gun Sales",
+      "Horoscope/ Fortune Telling",
+      "Money Services Businesses",
+      "Multi-Level Marketing Sales",
+      "Non-Profit",
+      "Outdoor Power Equipment Stores",
+      "Pawn Shops",
+      "Private Households",
+      "Religious/Civic Organizations",
+      "RV Dealer"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "credibly",
+    "name": "Credibly",
+    "criteria": {
+      "personalCredit": 550,
+      "monthlyRevenue": 20000,
+      "deposits": 4,
+      "nsfs": 7,
+      "avgBalance": 1000,
+      "monthsBusiness": 6
+    },
+    "restrictedIndustries": [
+      "Auto Sales",
+      "Adult Entertainment",
+      "Bail-Bonds",
+      "Brokers",
+      "Casino/ Gambling",
+      "Credit Repair",
+      "Dating Services",
+      "Dickey's BBQ Franchises",
+      "Government Agencies",
+      "Gun Sales",
+      "Law Firms",
+      "Marijuana/CBD",
+      "Multi-Level Marketing Sales",
+      "Non-Profit",
+      "Oil & Gas",
+      "Religious/Civic Organizations",
+      "Vape Shop",
+      "Warrenty Services",
+      "Trucking",
+      "Transportation"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "spartan-capital",
+    "name": "Spartan Capital",
+    "criteria": {
+      "personalCredit": 500,
+      "monthlyRevenue": 10000,
+      "deposits": 3,
+      "nsfs": 5,
+      "avgBalance": 1000,
+      "monthsBusiness": 12
+    },
+    "restrictedIndustries": [
+      "Auto Sales",
+      "Adult Entertainment",
+      "Bail-Bonds",
+      "Brokers",
+      "Casino/ Gambling",
+      "Credit Repair",
+      "Dating Services",
+      "Government Agencies",
+      "Gun Sales",
+      "Law Firms",
+      "Marijuana/CBD",
+      "Multi-Level Marketing Sales",
+      "Non-Profit",
+      "Oil & Gas",
+      "Religious/Civic Organizations",
+      "Vape Shop",
+      "Warrenty Services"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "mulligan",
+    "name": "Mulligan",
+    "criteria": {
+      "personalCredit": 625,
+      "monthlyRevenue": 25000,
+      "deposits": 4,
+      "nsfs": 3,
+      "avgBalance": 3000,
+      "monthsBusiness": 6
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Art Dealer",
+      "Auto Sales",
+      "Bail-Bonds",
+      "Birth Tourism",
+      "Boat Sales",
+      "Brokers",
+      "Marijuana/CBD",
+      "Casino/ Gambling",
+      "Cell Phone Stores",
+      "Gold Dealers",
+      "Gun Sales",
+      "Horoscope/ Fortune Telling",
+      "Money Services Businesses",
+      "Multi-Level Marketing Sales",
+      "Non-Profit",
+      "Outdoor Power Equipment Stores",
+      "Pawn Shops",
+      "Private Households",
+      "Religious/Civic Organizations",
+      "RV Dealer",
+      "Finance/Investment/Banks",
+      "Food Trucks",
+      "Law Firms",
+      "Real Estate",
+      "Trucking",
+      "Transportation",
+      "Vending",
+      "Vape Shop",
+      "Insurance"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "medium",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "rapid-finance",
+    "name": "Rapid Finance",
+    "criteria": {
+      "personalCredit": 600,
+      "monthlyRevenue": 10000,
+      "deposits": 3,
+      "nsfs": 5,
+      "avgBalance": 1000,
+      "monthsBusiness": 24
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Auto Sales",
+      "Bail-Bonds",
+      "Casino/ Gambling",
+      "Collections",
+      "Finance/Investment/Banks",
+      "Gun Sales",
+      "Influencers",
+      "Law Firms",
+      "Marijuana/CBD",
+      "Multi-Level Marketing Sales",
+      "Nightclub",
+      "Non-Profit",
+      "Real Estate",
+      "Religious/Civic Organizations",
+      "Trucking",
+      "Transportation",
+      "Vape Shop",
+      "Property Management"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "expansion",
+    "name": "Expansion",
+    "criteria": {
+      "personalCredit": 550,
+      "monthlyRevenue": 6000,
+      "deposits": 2,
+      "nsfs": 6,
+      "avgBalance": 550,
+      "monthsBusiness": 6
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Auto Sales",
+      "Bail-Bonds",
+      "Boat Sales",
+      "Business Associations/Unions",
+      "Call Centers",
+      "Card Processors",
+      "Casino/ Gambling",
+      "Collections",
+      "Finance/Investment/Banks",
+      "Government Agencies",
+      "Law Firms",
+      "Lead Generators",
+      "Lease-to-own Businesses",
+      "Marijuana/CBD",
+      "Mining & Quarries",
+      "Multi-Level Marketing Sales",
+      "Non-Profit",
+      "Pawn Shops",
+      "PREC.METALS",
+      "Religious/Civic Organizations",
+      "Brokers",
+      "Travel Agencies"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "kalamata",
+    "name": "Kalamata",
+    "criteria": {
+      "personalCredit": 600,
+      "monthlyRevenue": 18000,
+      "deposits": 4,
+      "nsfs": 3,
+      "avgBalance": 750,
+      "monthsBusiness": 12
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Education",
+      "Auto Sales",
+      "Farming",
+      "Gas & Oil",
+      "Gun Sales",
+      "Law Firms",
+      "Marijuana/CBD",
+      "Non-Profit",
+      "Pawn Shops",
+      "PREC.METALS",
+      "Real Estate",
+      "Retail",
+      "Religious/Civic Organizations",
+      "Trucking",
+      "Transportation",
+      "Towing"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "fundation-mca",
+    "name": "Fundation MCA",
+    "criteria": {
+      "personalCredit": 600,
+      "monthlyRevenue": 20000,
+      "deposits": 2,
+      "nsfs": 2,
+      "avgBalance": 1000,
+      "monthsBusiness": 6
+    },
+    "restrictedIndustries": [
+      "Law Firms",
+      "Gun Sales",
+      "Pawn Shops",
+      "Non-Profit",
+      "Real Estate",
+      "Money Services Businesses",
+      "Marijuana/CBD",
+      "Trucking",
+      "Transportation",
+      "Bail-Bonds",
+      "Finance/Investment/Banks"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "greenwich-capital",
+    "name": "Greenwich Capital",
+    "criteria": {
+      "personalCredit": 600,
+      "monthlyRevenue": 50000,
+      "deposits": 3,
+      "nsfs": 3,
+      "avgBalance": 1000,
+      "monthsBusiness": 24
+    },
+    "restrictedIndustries": [
+      "Accounting",
+      "Auto Rentals",
+      "Auto Sales",
+      "Bail-Bonds",
+      "Brokers",
+      "Cell Phone Stores",
+      "Finance/Investment/Banks",
+      "Food Trucks",
+      "Law Firms",
+      "Non-Profit",
+      "Real Estate",
+      "Trucking",
+      "Transportation",
+      "Vending"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "cfg",
+    "name": "CFG",
+    "criteria": {
+      "personalCredit": 500,
+      "monthlyRevenue": 15000,
+      "deposits": 3,
+      "nsfs": 4,
+      "avgBalance": 1000,
+      "monthsBusiness": 6
+    },
+    "restrictedIndustries": [
+      "Auto Sales",
+      "Bail-Bonds",
+      "Collections",
+      "Non-Profit",
+      "Religious/Civic Organizations",
+      "Travel Agencies",
+      "Wholesale",
+      "Brokers"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "edge",
+    "name": "Edge",
+    "criteria": {
+      "personalCredit": 500,
+      "monthlyRevenue": 6000,
+      "deposits": 2,
+      "nsfs": 5,
+      "avgBalance": 600,
+      "monthsBusiness": 6
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Auto Sales",
+      "Auto Rentals",
+      "Casino/ Gambling",
+      "Trucking",
+      "Transportation",
+      "Brokers"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "gfe",
+    "name": "GFE",
+    "criteria": {
+      "personalCredit": 500,
+      "monthlyRevenue": 30000,
+      "deposits": 3,
+      "nsfs": 3,
+      "avgBalance": 1000,
+      "monthsBusiness": 12
+    },
+    "restrictedIndustries": [],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "legend",
+    "name": "Legend",
+    "criteria": {
+      "personalCredit": 650,
+      "monthlyRevenue": 30000,
+      "deposits": 3,
+      "nsfs": 3,
+      "avgBalance": 1000,
+      "monthsBusiness": 36
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Auto Sales",
+      "Education",
+      "Farming",
+      "Oil & Gas",
+      "Gun Sales",
+      "Law Firms",
+      "Marijuana/CBD",
+      "Non-Profit",
+      "Pawn Shops",
+      "Real Estate",
+      "Brokers",
+      "Religious/Civic Organizations",
+      "Trucking",
+      "Transportation"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "medium",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "everest",
+    "name": "Everest",
+    "criteria": {
+      "personalCredit": 550,
+      "monthlyRevenue": 5000,
+      "deposits": 3,
+      "nsfs": 10,
+      "avgBalance": 1000,
+      "monthsBusiness": 3
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Finance/Investment/Banks",
+      "Auto Sales",
+      "Education",
+      "Gun Sales",
+      "Law Firms",
+      "Non-Profit",
+      "Pawn Shops",
+      "Real Estate",
+      "Brokers",
+      "Religious/Civic Organizations"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "vader-mountain-capital",
+    "name": "Vader Mountain Capital",
+    "criteria": {
+      "personalCredit": 500,
+      "monthlyRevenue": 3000,
+      "deposits": 3,
+      "nsfs": 10,
+      "avgBalance": 500,
+      "monthsBusiness": 3
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Finance/Investment/Banks",
+      "Auto Sales",
+      "Education",
+      "Gun Sales",
+      "Law Firms",
+      "Non-Profit",
+      "Pawn Shops",
+      "Real Estate",
+      "Brokers",
+      "Religious/Civic Organizations"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "bitty",
+    "name": "Bitty",
+    "criteria": {
+      "personalCredit": 450,
+      "monthlyRevenue": 1000,
+      "deposits": 1,
+      "nsfs": 10,
+      "avgBalance": 100,
+      "monthsBusiness": 1
+    },
+    "restrictedIndustries": [
+      "Auto Sales",
+      "Accounting"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "good-funding",
+    "name": "Good Funding",
+    "criteria": {
+      "personalCredit": 600,
+      "monthlyRevenue": 5000,
+      "deposits": 4,
+      "nsfs": 3,
+      "avgBalance": 1200,
+      "monthsBusiness": 18
+    },
+    "restrictedIndustries": [],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "cashflo-it",
+    "name": "Cashflo It",
+    "criteria": {
+      "personalCredit": 500,
+      "monthlyRevenue": 35000,
+      "deposits": 5,
+      "nsfs": 2,
+      "avgBalance": 600,
+      "monthsBusiness": 12
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Auto Sales",
+      "Casino/ Gambling",
+      "Collections",
+      "Construction",
+      "Contractors",
+      "Roofing",
+      "Electrician",
+      "Landscaping",
+      "Farming",
+      "Finance/Investment/Banks",
+      "Gas Stations",
+      "Insurance",
+      "Law Firms",
+      "Marijuana/CBD",
+      "Real Estate",
+      "Brokers",
+      "Title Companies",
+      "Trucking",
+      "Transportation"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "dexly-finance",
+    "name": "Dexly Finance",
+    "criteria": {
+      "personalCredit": 600,
+      "monthlyRevenue": 200000,
+      "deposits": 2,
+      "nsfs": 5,
+      "avgBalance": 1000,
+      "monthsBusiness": 12
+    },
+    "restrictedIndustries": [
+      "Construction",
+      "Consulting",
+      "Finance/Investment/Banks",
+      "Non-Profit",
+      "Contractors",
+      "Money Services Businesses",
+      "Marijuana/CBD",
+      "Trucking",
+      "Transportation",
+      "Bail-Bonds",
+      "Auto Sales"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "standard",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "capital-assist",
+    "name": "Capital Assist",
+    "criteria": {
+      "personalCredit": 500,
+      "monthlyRevenue": 75000,
+      "deposits": 3,
+      "nsfs": 6,
+      "avgBalance": 1000,
+      "monthsBusiness": 6
+    },
+    "restrictedIndustries": [
+      "Adult Entertainment",
+      "Auto Sales",
+      "Casino/ Gambling",
+      "Collections",
+      "Construction",
+      "Contractors",
+      "Farming",
+      "Finance/Investment/Banks",
+      "Gas Stations",
+      "Insurance",
+      "Law Firms",
+      "Marijuana/CBD",
+      "Real Estate",
+      "Brokers",
+      "Title Companies",
+      "Trucking",
+      "Transportation"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "greenbox",
+    "name": "GreenBOX",
+    "criteria": {
+      "personalCredit": 500,
+      "monthlyRevenue": 10000,
+      "deposits": 2,
+      "nsfs": 7,
+      "avgBalance": 150,
+      "monthsBusiness": 5
+    },
+    "restrictedIndustries": [
+      "Bail-Bonds",
+      "Collections",
+      "Credit Repair",
+      "Finance/Investment/Banks",
+      "Marijuana/CBD",
+      "Religious/Civic Organizations",
+      "Trucking",
+      "Transportation",
+      "Real Estate",
+      "Brokers"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "last-chance-funding",
+    "name": "Last Chance Funding",
+    "criteria": {
+      "personalCredit": 450,
+      "monthlyRevenue": 1000,
+      "deposits": 1,
+      "nsfs": 10,
+      "avgBalance": 500,
+      "monthsBusiness": 1
+    },
+    "restrictedIndustries": [
+      "Finance/Investment/Banks",
+      "Medical/Healthcare",
+      "Restaurant"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  },
+  {
+    "id": "torro",
+    "name": "Torro",
+    "criteria": {
+      "personalCredit": 500,
+      "monthlyRevenue": 15000,
+      "deposits": 3,
+      "nsfs": 2,
+      "avgBalance": 500,
+      "monthsBusiness": 4
+    },
+    "restrictedIndustries": [
+      "Trucking",
+      "Transportation",
+      "Finance/Investment/Banks"
+    ],
+    "weights": {
+      "personalCredit": 0.25,
+      "monthlyRevenue": 0.3,
+      "deposits": 0.1,
+      "nsfs": 0.2,
+      "avgBalance": 0.05,
+      "monthsBusiness": 0.1
+    },
+    "metadata": {
+      "riskTolerance": "high",
+      "speed": "fast",
+      "maxPosition": 2,
+      "preferredIndustries": [
+        "Retail",
+        "Restaurant",
+        "Professional Services"
+      ]
+    }
+  }
+]
