@@ -2,7 +2,7 @@
  * Lender data loading, validation, and result sorting.
  */
 
-import { APP_CONFIG } from './constants.js';
+import { APP_CONFIG, resolveAssetPath } from './constants.js';
 import { scoreAllLenders } from './scoringEngine.js';
 import { generateImprovementRecommendations } from './explanationEngine.js';
 import { slugify, sanitizeNumber } from './utils.js';
@@ -10,14 +10,18 @@ import { slugify, sanitizeNumber } from './utils.js';
 /**
  * Fetch and validate lender dataset from external JSON.
  */
-export async function loadLenders(url = APP_CONFIG.lendersDataPath) {
+export async function loadLenders(url) {
+  const lendersUrl = url || APP_CONFIG.lendersDataPath || resolveAssetPath('data/lenders.json');
+
   try {
-    const response = await fetch(url);
+    const response = await fetch(lendersUrl);
+
     if (!response.ok) {
-      throw new Error(`Failed to load lenders (${response.status})`);
+      throw new Error(`Failed to load lenders.json: ${response.status} (${lendersUrl})`);
     }
 
     const data = await response.json();
+
     if (!Array.isArray(data)) {
       throw new Error('Lender data must be an array');
     }
@@ -28,9 +32,10 @@ export async function loadLenders(url = APP_CONFIG.lendersDataPath) {
       throw new Error('No valid lenders found in dataset');
     }
 
+    console.info(`[loadLenders] loaded ${lenders.length} lenders from ${lendersUrl}`);
     return lenders;
   } catch (error) {
-    console.error('[lenderService] loadLenders:', error);
+    console.error('[loadLenders] error:', error, { lendersUrl });
     throw error;
   }
 }

@@ -68,7 +68,14 @@ export function hideError() {
 }
 
 export function setLoading(isLoading) {
-  if (dom.loadingOverlay) dom.loadingOverlay.hidden = !isLoading;
+  const overlay = dom.loadingOverlay;
+  if (overlay) {
+    overlay.hidden = !isLoading;
+    overlay.setAttribute('aria-hidden', String(!isLoading));
+    // CSS display:flex overrides [hidden] without explicit none
+    overlay.style.display = isLoading ? 'flex' : 'none';
+    overlay.style.pointerEvents = isLoading ? 'auto' : 'none';
+  }
   if (dom.form) dom.form.classList.toggle('loading', isLoading);
 }
 

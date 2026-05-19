@@ -2,7 +2,7 @@
  * Application entry point — orchestrates data loading, scoring, and UI.
  */
 
-import { APP_CONFIG, DISCLAIMER_FALLBACK, INPUT_LIMITS } from './constants.js';
+import { APP_CONFIG, BASE_PATH, DISCLAIMER_FALLBACK, INPUT_LIMITS } from './constants.js';
 import { sanitizeNumber } from './utils.js';
 import {
   loadLenders,
@@ -28,6 +28,11 @@ let lastEvaluation = null;
 let activeFilter = 'all';
 
 async function bootstrap() {
+  // Deployment validation (remove or gate behind debug flag in production if desired)
+  console.log('BASE_PATH:', BASE_PATH);
+  console.log('Location:', window.location.href);
+  console.log('Lenders URL:', APP_CONFIG.lendersDataPath);
+
   initDomRefs();
   setLoading(true);
   hideError();
@@ -35,19 +40,22 @@ async function bootstrap() {
   try {
     await loadDisclaimer();
     lendersCache = await loadLenders();
+
     renderIndustryOptions(buildIndustryOptions(lendersCache));
+
     renderFilterBar((filter) => {
       activeFilter = filter;
       if (lastEvaluation) {
         renderResults(lastEvaluation, activeFilter);
       }
     });
+
     bindFormEvents();
   } catch (error) {
-    showError(
-      'Unable to load lender data. Please run via a local server (e.g. npx serve) and refresh.',
-    );
     console.error('[app] bootstrap failed:', error);
+    showError(
+      'Failed to initialize app. Unable to load data — please refresh or try again later.',
+    );
   } finally {
     setLoading(false);
   }
@@ -57,9 +65,12 @@ async function loadDisclaimer() {
   const fallback = `<div class="disclaimer" role="note"><p>${DISCLAIMER_FALLBACK}</p></div>`;
   try {
     const res = await fetch(APP_CONFIG.disclaimerPath);
-    const html = res.ok ? await res.text() : fallback;
-    renderDisclaimer(html);
-  } catch {
+    if (!res.ok) {
+      throw new Error(`Disclaimer fetch failed: ${res.status}`);
+    }
+    renderDisclaimer(await res.text());
+  } catch (error) {
+    console.warn('[app] loadDisclaimer fallback:', error);
     renderDisclaimer(fallback);
   }
 }
@@ -130,4 +141,21 @@ function handleSubmit(event) {
   }, APP_CONFIG.analyzeDelayMs);
 }
 
-document.addEventListener('DOMContentLoaded', bootstrap);
+function startApp() {
+  bootstrap()
+    .catch((error) => {
+      console.error('[app] unhandled bootstrap error:', error);
+      setLoading(false);
+      showError('Failed to initialize app. Please refresh the page.');
+    })
+    .finally(() => {
+      window.__PEAPOD_READY__ = true;
+      window.dispatchEvent(new Event('peapod:ready'));
+    });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', startApp);
+} else {
+  startApp();
+}
